@@ -1,0 +1,509 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+:root {
+    --body-background: #0e0e0e;
+    --color-logo: #ff5b50;
+    --card-color: #252525;
+    --text-color: #fff;
+    --subtitle-color: #5a5757;
+    --black-text: #000;
+    --color-input: #0D0D0D;
+  }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+    color: var(--text-color);
+}
+
+body{
+    background-color: var(--body-background);
+}
+
+.container-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+/* stilizando first content*/
+
+#first-content {
+    background: url(./background.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    padding: 50px 80px 0px 80px;
+    flex-direction: column;
+    gap: 90px;
+}
+
+.benefits-section {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .benefits-section h2 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px;
+  }
+
+  .benefit {
+    display: flex;
+    align-items: center;
+    margin: 0px 0;
+  }
+
+  .benefit span {
+    font-size: 24px;
+    margin-right: 15px;
+  }
+
+  .benefit p {
+    margin: 0;
+    font-size: 18px;
+    color: #ff5b50;
+  }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title-header {
+    display: flex;
+}
+
+#title-header :nth-child(2) {
+    color: var(--color-logo);
+}
+
+#NAV {
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+#NAV a{
+    text-decoration: none;
+}
+
+#connect-btn {
+    background-color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #000;
+    font-weight: 700;
+    line-height: 19px;
+}
+
+#intro {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.artists {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.title-intro {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 60px;
+    width: 590px;
+}
+
+.title-intro :nth-child(2) {
+    color: var(--color-logo);
+}
+
+.icon_check{
+    height: 20rem;
+}
+
+.artists p{
+    width: 350px;
+}
+
+#astronaut-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 70px 0px;
+    margin-top: 90px;
+    
+}
+
+#astronaut-gallery img {
+    border: solid 2px var(--text-color);
+    width: 320px;
+}
+
+/*estilizando o article content*/
+
+#article-content {
+    display: flex;
+}
+
+
+.forColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+.forColumn img {
+    width: 1251px;
+}
+
+.forRow {
+    display: flex;
+    gap:350px;
+    padding: 80px;
+}
+
+.text1,
+.text2 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 340px;
+}
+
+.forRow a {
+    color: var(--color-logo);
+}
+
+#details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border-right: solid 1px var(--subtitle-color);
+    border-bottom: solid 1px var(--subtitle-color);
+    padding: 50px 60px 50px 80px;
+}
+
+
+
+#details span span {
+    color: var(--subtitle-color);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#details span {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 25px;
+}
+
+/*estilizando o weekly popular*/
+
+#weekly-popular {
+    padding: 150px 90px 0px 90px;
+}
+
+.title-weekly {
+    font-size: 35px;
+    display: flex;
+    gap: 20px;
+}
+
+.title-weekly :nth-child(1) {
+    color: var(--color-logo);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper h1 {
+    font-weight: 400;
+}
+
+.title-astronaut01,
+.title-astronaut02,
+.title-astronaut03,
+.title-astronaut04 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-astronaut01,
+.title-astronaut02 {
+    margin-top: 150px;
+}
+
+.wrapper span {
+    color: var(--subtitle-color);
+    font-weight: 500;
+}
+
+.wrapper .left,
+.wrapper .right {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.border {
+    border-right: solid 1px var(--subtitle-color);
+    margin-top: 150px;
+}
+
+.owner-price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 44px;
+    margin-bottom: 26px;
+}
+
+.owner-price :nth-child(2) {
+    color: var(--color-logo);
+}
+
+/*estilizando o artists*/
+
+#best-artists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#best-artists a{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 150px;
+}
+
+.top-artists,
+.bottom-artists {
+    display: flex;
+    gap: 110px;
+}
+
+.title-artists {
+    margin-top: 150px;
+    margin-bottom: 120px;
+}
+
+.maykBrito,
+.Jakeliny,
+.JoaoBiro,
+.tamires,
+.ana,
+.diego {
+    background-color: var(--card-color);
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    gap: 30px;
+    width: 350px;
+    cursor: pointer;
+}
+
+.maykBrito:hover,
+.Jakeliny:hover,
+.JoaoBiro:hover,
+.tamires:hover,
+.ana:hover,
+.diego:hover{
+    background-color: #ff5b50;
+}
+
+.maykBrito:hover span,
+.Jakeliny:hover span,
+.JoaoBiro:hover span,
+.tamires:hover span,
+.ana:hover span,
+.diego:hover span {
+  color: var(--text-color);
+}
+
+
+.name-mayk,
+.name-jakeliny,
+.name-joao,
+.name-tamires,
+.name-ana,
+.name-diego {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.name-mayk :nth-child(2),
+.name-jakeliny :nth-child(2),
+.name-joao :nth-child(2),
+.name-tamires :nth-child(2),
+.name-ana :nth-child(2),
+.name-diego :nth-child(2) {
+    color: var(--color-logo);
+}
+
+
+.bottom-artists{
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+
+.title-artists {
+    font-size: 35px;
+    display: flex;
+    gap: 20px;
+}
+
+.title-artists :nth-child(2) {
+    color: var(--color-logo);
+}
+
+/*estilizando o footer*/
+
+footer {
+    background-color: var(--card-color);
+}
+
+#header-rodape {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 100px 60px 80px;
+    border-bottom: solid 1px var(--subtitle-color);
+}
+
+#header-rodape a{
+    background-color: var(--color-logo);
+    padding: 22px;
+}
+
+.title-rodape {
+    display: flex;
+    gap: 15px;
+    font-size: 22px;
+}
+
+.title-rodape :nth-child(2) {
+    color: var(--color-logo);
+}
+
+.wrapper-rodape{
+    display: flex;
+    border-bottom: solid 1px var(--subtitle-color);
+}
+
+.wrapper-rodape form{
+    padding: 80px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.wrapper-rodape form :nth-child(2) {
+    color: var(--color-logo);
+}
+
+form {
+    border-right: solid 1px var(--subtitle-color) ;
+}
+
+form input{
+    height: 60px;
+    width: 260px;
+    background-color: var(--color-input);
+    border: none;
+    margin-top: 35px;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+form button {
+    height: 58px;
+    width: 100px;
+    background-color: var(--text-color);
+    color: var(--black-text);
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: -8px;
+    border: none;
+    cursor: pointer;
+}
+
+#article-links {
+    padding: 80px 0px 80px 120px;
+    display: flex;
+    gap: 130px;
+}
+
+#article-links a{
+    text-decoration: none;
+    color: var(--subtitle-color);
+    font-size: 16px;
+}
+
+#article-links a:hover {
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.linksColumn01,
+.linksColumn02,
+.linksColumn03 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+#socials {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 85px 60px 85px;
+}
+
+#socials a {
+    text-decoration: none;
+    color: var(--subtitle-color);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.socialProfiles {
+    display: flex;
+    gap: 50px;
+}
+
+/*animação*/
+[data-anime] {
+    opacity: 0;
+    transition: .3s;
+}
+
+[data-anime="left"] {
+    transform: translate3d(-50px, 0px, 0px); /*se caso quisesse ele vindo do topo seria (0px, -50px, 0px)*/
+}
+
+[data-anime="right"] {
+    transform: translate3d(50px, 0px, 0px);
+}
+
+[data-anime].animate { /*adicionando uma classe que vai ser selecionada pelo java*/
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+} /*aqui a nimação ja foi criada mas n esta com o scroll*/
